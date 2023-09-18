@@ -15,3 +15,9 @@ document.addEventListener('click', clickHandler);
 
 waitThreeSeconds();
 console.log('finished execution');
+
+// The order is finished function, finished execution, click event!
+
+// Finished function happens first because it's synchronous.
+
+// 'Click event!' can't happen until after the while loop is done, because the event queue is only processed when the execution stack is empty.
